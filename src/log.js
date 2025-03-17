@@ -45,13 +45,13 @@ const log = {
         }
 
         if (level >= LOG_LEVELS.ERROR) {
-            console?.error(msg);
+            console?.error('[strophejs] ' + msg);
         } else if (level === LOG_LEVELS.INFO) {
-            console?.info(msg);
+            console?.info('[strophejs] ' + msg);
         } else if (level === LOG_LEVELS.WARN) {
-            console?.warn(msg);
+            console?.warn('[strophejs] ' + msg);
         } else if (level === LOG_LEVELS.DEBUG) {
-            console?.debug(msg);
+            console?.debug('[strophejs] ' + msg);
         }
     },
 
